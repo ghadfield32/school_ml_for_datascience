@@ -1,0 +1,19 @@
+name: ml_basics_env
+channels: #where conda will look for packages
+  - defaults
+  - conda-forge
+dependencies: #conda packages
+  - python=3.11
+  - pandas
+  - numpy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - jupyter
+  - streamlit
+  - pytest
+  - pip
+  - pip: #non conda packages installed below
+      - supervision
+      - roboflow
+      - ultralytics
